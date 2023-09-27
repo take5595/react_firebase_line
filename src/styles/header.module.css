@@ -1,0 +1,15 @@
+.header{
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    gap:20px;
+    
+    background-color: rgb(178, 173, 202);
+    width: 100%;
+
+    /* fix */
+    position:fixed;
+
+}
