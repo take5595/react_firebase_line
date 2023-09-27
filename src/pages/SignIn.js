@@ -9,7 +9,8 @@ import {auth} from '../components/firebase.js'
 function SignIn() {
   function signInWithGoogle() {
       const provider = new firebase.auth.GoogleAuthProvider();
-      auth.signInWithPopup(provider);
+      // auth.signInWithPopup(provider);
+      auth.signInWithRedirect(provider);
     }
 
   return (
