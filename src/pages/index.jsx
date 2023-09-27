@@ -11,7 +11,7 @@ import { useCallback, useEffect, useState } from 'react'
 import {collection,doc,getDocs, onSnapshot} from "firebase/firestore"
 import  {useAuthState} from "react-firebase-hooks/auth"
 import SignIn from "./SignIn.js"
-import {auth,db} from "./firebase.js"
+import {auth,db} from "../components/firebase.js"
 import Line from "./Line.js"
 
 

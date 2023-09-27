@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { db ,auth} from './firebase';
+import { db ,auth} from '../components/firebase';
 import firebase from "firebase/compat/app"
 import { Input } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';

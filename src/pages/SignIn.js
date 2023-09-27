@@ -3,7 +3,7 @@ import {Button} from '@mui/material'
 import firebase from "firebase/compat/app"
 
 import Styles from '@/styles/Home.module.css'
-import {auth} from './firebase.js'
+import {auth} from '../components/firebase.js'
 
 
 function SignIn() {

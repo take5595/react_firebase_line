@@ -6,7 +6,7 @@ import SendMessage from './SendMessage.js'
 import {useEffect} from 'react'
 
 // db
-import {db} from './firebase.js'
+import {db} from '../components/firebase.js'
 
 // css
 import Style from '@/styles/Home.module.css'
