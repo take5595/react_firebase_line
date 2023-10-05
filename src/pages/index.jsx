@@ -43,8 +43,8 @@ export default function Home() {
         {/* <Header></Header> */}
         
         <div className={styles.line}>
-          {/* {user ? <Line/> : <SignIn/>} */}
-          <Line></Line>
+          {user ? <Line/> : <SignIn/>}
+          {/* <Line></Line> */}
         </div>
         {/* <SignIn></SignIn> */}
 
