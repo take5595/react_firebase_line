@@ -14,11 +14,14 @@ function Line() {
     const [messages,setMessages] = useState([]);
     useEffect(() => {
         db.collection("line")
-        .orderBy("createdAt")
+        .orderBy("createdAt","desc")
         .limit(50)
         .onSnapshot((snapshot) => {
-            setMessages(snapshot.docs.map((doc) => doc.data()))
+            setMessages(snapshot.docs.map((doc) => doc.data()).reverse())
         })
+    messages.map((text,id)=> {
+        console.log(text.text,id)
+    })
     },[]);
 
 
