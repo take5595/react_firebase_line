@@ -85,6 +85,23 @@
   /* 下にpaddin */
   padding-bottom: 10vh;
   padding-top: 15vh;
+  /* 左に余白 */
+  padding-left: 1vw;
+  
+}
+
+.linestring{
+  /*文字をおしゃれに囲う*/
+  background-color: #afd5db; /* 背景色を赤に設定 */
+  border: 2px solid #afd5db; /* ボーダーの太さと色を設定 */
+  border-radius: 10px;
+  
+  margin:10px;
+
+  width: 25vw; /* テキストのコンテナの幅を50vwに設定 */
+  word-wrap: break-word;
+  
+
 }
 
 
@@ -100,6 +117,22 @@
   .signout{
     width:100%;
   }
+  .linemain{
+    padding-left: 5vw;
+    /* 文字の背景 */
+    
+  }
+
+
+  .linestring{
+
+    width: 50vw; /* テキストのコンテナの幅を50vwに設定 */
+    
+  
+  }
+  
+
+
 }
 
 

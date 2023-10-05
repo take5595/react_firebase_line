@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import SignOut from './SignOut.js'
 import SendMessage from './SendMessage.js'
-
 // useEffect
 import {useEffect} from 'react'
-
 // db
 import {db} from '../components/firebase.js'
-
 // css
 import Style from '@/styles/Home.module.css'
+
+
 
 function Line() {
     const [messages,setMessages] = useState([]);
@@ -21,6 +20,8 @@ function Line() {
             setMessages(snapshot.docs.map((doc) => doc.data()))
         })
     },[]);
+
+
 
 
   return (
@@ -35,7 +36,7 @@ function Line() {
         <div className={Style.linemain}>
             {messages.map(({id,text,photoURL,uid}) => (
 
-                <div key={id}>
+                <div key={id} className={Style.linestring}>
                    <p>{text}</p>
                 </div>                
             ))}
